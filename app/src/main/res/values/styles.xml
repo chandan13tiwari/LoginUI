@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppCompat.NoActionBar." parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="SolidButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/solid_bg</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/sf_pro_display_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="StrokeButtonStyle" parent="SolidButtonStyle">
+        <item name="android:background">@drawable/stroke_bg</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+
+    </style>
+
+</resources>

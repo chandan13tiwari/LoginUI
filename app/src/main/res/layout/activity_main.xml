@@ -1,0 +1,52 @@
+<LinearLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/learncodeback4"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LearnCodeOnline"
+        android:fontFamily="@font/tomatoes"
+        android:textSize="30dp"
+
+        android:textColor="#2C3335"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/StrokeButtonStyle"
+                android:minWidth="130dp"
+                android:onClick="login"
+                android:text="Login"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_get_started"
+                style="@style/SolidButtonStyle"
+                android:layout_alignParentEnd="true"
+                android:minWidth="130dp"
+                android:onClick="signup"
+                android:text="Sign Up"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

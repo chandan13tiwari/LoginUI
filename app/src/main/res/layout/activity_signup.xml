@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/learncodeback7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="50sp"
+        android:textColor="#2C3335"
+        android:fontFamily="@font/sf_pro_display_light"
+        android:layout_marginTop="180sp"
+        android:layout_marginLeft="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Journey to magical world of programming starts here !"
+        android:textSize="20sp"
+        android:textColor="#2C3335"
+        android:fontFamily="@font/sf_pro_display_light"
+        android:layout_marginLeft="20sp"
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+        <EditText android:id="@+id/input_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--  Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+        <EditText android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_get_started"
+            style="@style/SolidButtonStyle"
+
+            android:minWidth="130dp"
+            android:text="Sign Up"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By clicking 'Sign Up' you are agreeing that you wish to receive emails or calls or sms."
+            android:textColor="#019031"
+            android:textSize="10sp"
+
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="5sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Registered! "
+            android:textColor="#4C4B4B"
+            android:textSize="15sp"
+            android:layout_marginLeft="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#019031"
+            android:textSize="15sp"
+            android:layout_marginLeft="10sp"
+            android:onClick="login"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
